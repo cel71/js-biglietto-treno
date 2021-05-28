@@ -2,7 +2,9 @@ var numeroKilometri = prompt("Quanti kilometri deve percorrere ?");
 document.getElementById("kilometri").innerHTML = numeroKilometri + " Km da percorrere.";
 var prezzoBiglietto = parseInt(numeroKilometri) * 0.21;
 document.getElementById("biglietto").innerHTML = prezzoBiglietto + " Euro, prezzo biglietto non scontato.";
-var anniPasseggero = prompt("Qual'è la sua età ?");
+alert("ATTENZIONE ! SPECIFICA LA TUA DATA DI NASCITA");
+var dataNascitaPasseggero = prompt("Qual'è la sua data di nascita ?");
+var anniPasseggero = 2021 - parseInt(dataNascitaPasseggero);
 document.getElementById("anni").innerHTML = anniPasseggero + ": Anni passeggero.";
 if (anniPasseggero < 18) {
     var scontoVenti = prezzoBiglietto * 20 / 100;
